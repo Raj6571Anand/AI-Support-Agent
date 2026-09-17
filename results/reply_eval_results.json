@@ -1,0 +1,1202 @@
+[
+  {
+    "idx": 0,
+    "customer_text": "Man, ordered @user but got @user. @user next time you’re getting Monopoly money. Disappointing!",
+    "actual_reply": "@user I'm sorry for the miss. Have you reported this to our support team here: https://t.co/2t6DQoUmNZ? ^RW",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 5,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the mistake, offers a clear next step (reporting to support), and maintains a professional tone. It is relevant, grounded, and actionable, though slightly informal."
+    },
+    "system_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 5,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the mistake, offers a clear next step (reporting to support), and maintains a professional tone. It is relevant, grounded, and actionable, though slightly informal."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, asks for the order ID, and offers to investigate, which is relevant, grounded, professional, and actionable."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, asks for the order ID, and offers to investigate, which is relevant, grounded, professional, and actionable."
+    },
+    "system_overall_avg": 4.0
+  },
+  {
+    "idx": 1,
+    "customer_text": "@AmazonHelp ordered a item that was in stock &amp; 2day shipping. 6days later still no item. Emailed customer service &amp; was assured it was out for delivery.",
+    "actual_reply": "@user Did we miss the expected delivery date? We're you given an updated delivery date or notice of delay? We want to help! ^ZW",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply is generic and does not acknowledge the delay or the customer’s frustration. It lacks specific details about the shipment status, offers no concrete next steps, and uses a vague tone that is not fully empathetic. Thus it scores low on relevance, grounding, and actionability, with a moderate tone."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply is generic and does not acknowledge the delay or the customer’s frustration. It lacks specific details about the shipment status, offers no concrete next steps, and uses a vague tone that is not fully empathetic. Thus it scores low on relevance, grounding, and actionability, with a moderate tone."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a standard next step, but it does not directly address the delay or provide any status update. The tone is professional but the DM request may feel less brand‑appropriate. Overall, it is a moderate, functional response."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a standard next step, but it does not directly address the delay or provide any status update. The tone is professional but the DM request may feel less brand‑appropriate. Overall, it is a moderate, functional response."
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 2,
+    "customer_text": "@user It was clear case of cheating &amp; fraud giving false promises of Gautd. delivery by Prime &amp; not delivering at all CustomerHarassment",
+    "actual_reply": "@user I'm sorry to know your order isn't delivered. Kindly fill your details here: https://t.co/GIJyeYqKE0, I'll look into it. ^NR",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the delivery issue and requests details, which is a standard support step. It does not address the customer’s claims of cheating/fraud, so relevance is moderate. Grounding is good because the response follows typical agent behavior. Tone is professional but lacks deeper empathy for the fraud claim. Actionability is clear with a link for next steps. Overall, the reply is acceptable but could improve by addressing the fraud allegation."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the delivery issue and requests details, which is a standard support step. It does not address the customer’s claims of cheating/fraud, so relevance is moderate. Grounding is good because the response follows typical agent behavior. Tone is professional but lacks deeper empathy for the fraud claim. Actionability is clear with a link for next steps. Overall, the reply is acceptable but could improve by addressing the fraud allegation."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a typical next step. It does not address the customer’s claims of cheating or harassment, so relevance is moderate. The tone is professional but not deeply empathetic. The actionability is clear. Overall, it scores well but could improve by addressing the specific concerns."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a typical next step. It does not address the customer’s claims of cheating or harassment, so relevance is moderate. The tone is professional but not deeply empathetic. The actionability is clear. Overall, it scores well but could improve by addressing the specific concerns."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 3,
+    "customer_text": "@user Could someone call me please. I am unable to get through customer service as the IVR says unable to find order. My number is 8130148103.",
+    "actual_reply": "@user I'm sorry for the confusion. Please track your order here: https://t.co/pYHdlcj0Ot or else you may get in touch with us via chat or email as an alternative. ^RW",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply apologizes and offers tracking and chat/email options, which is typical support behavior, but it does not address the customer’s request for a phone call, so relevance is low. Tone is professional and empathetic. Actionability is moderate because it gives clear next steps, though missing the call option."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply apologizes and offers tracking and chat/email options, which is typical support behavior, but it does not address the customer’s request for a phone call, so relevance is low. Tone is professional and empathetic. Actionability is moderate because it gives clear next steps, though missing the call option."
+    },
+    "baseline_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 2,
+      "overall": 2,
+      "reasoning": "The reply fails to address the customer’s request for a callback and instead asks for an order ID via DM, which is irrelevant to the issue. It also does not align with the brand’s typical response style. The tone is mildly apologetic but lacks empathy, and the action step is unclear and not helpful for the customer’s immediate need."
+    },
+    "baseline_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 2,
+      "overall": 2,
+      "reasoning": "The reply fails to address the customer’s request for a callback and instead asks for an order ID via DM, which is irrelevant to the issue. It also does not align with the brand’s typical response style. The tone is mildly apologetic but lacks empathy, and the action step is unclear and not helpful for the customer’s immediate need."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 4,
+    "customer_text": "@AmazonHelp Got an email saying that merchandise couldn't be delivered. Have been trying to contact but can't get through. Why can't something be delivered when we buy from Amazon all the time! So much for customer service.",
+    "actual_reply": "@user Oh no! We're terribly sorry about that, Jane. We'd love to get this sorted for you as quickly as we can, especially since Christmas is right around the corner. Please give us a call or chat here, and we'll get to work for you quickly! https://t.co/hApLpMlfHN ^JD",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and offers a quick resolution, but lacks specific details about the delivery problem. It follows typical brand tone and provides a clear next step."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and offers a quick resolution, but lacks specific details about the delivery problem. It follows typical brand tone and provides a clear next step."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is relevant and actionable. However, asking for the ID via DM is less typical for a support agent and the tone is somewhat generic, so grounding and tone are slightly lower."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is relevant and actionable. However, asking for the ID via DM is less typical for a support agent and the tone is somewhat generic, so grounding and tone are slightly lower."
+    },
+    "system_overall_avg": 4.0
+  },
+  {
+    "idx": 5,
+    "customer_text": "@AmazonHelp Even after filling and replying to the correspondence still no update about the whereabouts of my order",
+    "actual_reply": "@user We are working on your concern. We shall reach out to you at the earliest. ^CB",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 3,
+      "reasoning": "Acknowledges issue but lacks detail, generic tone, no clear next step."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 3,
+      "reasoning": "Acknowledges issue but lacks detail, generic tone, no clear next step."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, requests the order ID for investigation, and offers a clear next step. It aligns with typical support behavior, maintains a professional tone, and is actionable, though it could provide more context or reassurance."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, requests the order ID for investigation, and offers a clear next step. It aligns with typical support behavior, maintains a professional tone, and is actionable, though it could provide more context or reassurance."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 6,
+    "customer_text": "@user on continuation above .they not even call me on Wednesday inadvertently delaying in delivering.took action .",
+    "actual_reply": "@user Please fill in your details using the link: https://t.co/JzRdscmdH9 and I'll get in touch with you soon. ^AK (2/2)",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 2,
+      "tone": 2,
+      "actionability": 3,
+      "overall": 2,
+      "reasoning": "The reply does not address the customer’s complaint about the missed call or delivery delay, offering only a generic link for details. It lacks empathy and specific acknowledgment of the issue, though it does provide a next step. Overall, it falls short on relevance, tone, and grounding, but offers some actionability."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 2,
+      "tone": 2,
+      "actionability": 3,
+      "overall": 2,
+      "reasoning": "The reply does not address the customer’s complaint about the missed call or delivery delay, offering only a generic link for details. It lacks empathy and specific acknowledgment of the issue, though it does provide a next step. Overall, it falls short on relevance, tone, and grounding, but offers some actionability."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a common next step. It does not directly address the missed call or delivery delay, so relevance is moderate. The tone is professional and empathetic, and the actionability is clear. Overall, it aligns well with typical support practices."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a common next step. It does not directly address the missed call or delivery delay, so relevance is moderate. The tone is professional and empathetic, and the actionability is clear. Overall, it aligns well with typical support practices."
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 7,
+    "customer_text": "@AmazonHelp I have been keeping eye everywhere Twitter, email, phone, website tracking,I mean currently getting my package delivered to me is 2nd priority,1st priority is ceeing wen&amp;thru which medium @AmazonHelp @user will atleast update me of status or share some info of wats going on",
+    "actual_reply": "@user As soon as we receive your details, we'll look into it and update you accordingly. ^AM",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 2,
+      "reasoning": "Reply is generic and does not address the customer’s specific request for tracking updates, lacks a clear next step, but maintains a professional tone."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 2,
+      "reasoning": "Reply is generic and does not address the customer’s specific request for tracking updates, lacks a clear next step, but maintains a professional tone."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, requests the order ID for investigation, and offers a clear next step, aligning with typical support practices and maintaining a professional tone."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, requests the order ID for investigation, and offers a clear next step, aligning with typical support practices and maintaining a professional tone."
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 8,
+    "customer_text": "@AmazonHelp @user @AmazonHelp 2 items attempted to be delivered while I am here in my house! Both paid for postage x2 but being not delivered as 1!",
+    "actual_reply": "@user Please contact us directly so we can look into this with you: https://t.co/JzP7hlA23B ^SB",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply directs the customer to contact support but does not address the specific delivery issue, so relevance is low. It follows typical support phrasing, so grounding is good. Tone is neutral and professional but lacks empathy. The next step is clear, making actionability high. Overall, the response is average."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply directs the customer to contact support but does not address the specific delivery issue, so relevance is low. It follows typical support phrasing, so grounding is good. Tone is neutral and professional but lacks empathy. The next step is clear, making actionability high. Overall, the response is average."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 3,
+      "tone": 4,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is relevant. However, asking for the ID via DM is less standard than providing a direct link or support channel, so grounding is slightly lower. Tone is professional and empathetic. Actionability is moderate because the next step is clear but the DM method may not be the most user‑friendly option."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 3,
+      "tone": 4,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is relevant. However, asking for the ID via DM is less standard than providing a direct link or support channel, so grounding is slightly lower. Tone is professional and empathetic. Actionability is moderate because the next step is clear but the DM method may not be the most user‑friendly option."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 9,
+    "customer_text": "@AmazonHelp No idea what the status is, I CANT GET A RESPONSE! Its been 3 weeks since the shipment could not be delivered because YOUR seller used cheap ass SurePost to deliver to an address that does not receive USPS service. Your (multiple) agents are/were all aware of this vis App/Chat.",
+    "actual_reply": "@user A-to-z Guarantee claims typically take 1-2 weeks to process. We're not able to view your order via Twitter. Please contact us here: https://t.co/hApLpMlfHN and we'll be glad to take a look! ^AB",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 2,
+      "actionability": 3,
+      "overall": 2,
+      "reasoning": "The reply does not address the customer’s specific issue about the shipment and the use of SurePost, lacks empathy or apology, and only offers a generic link for further contact. It provides a next step but is otherwise unhelpful."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 2,
+      "actionability": 3,
+      "overall": 2,
+      "reasoning": "The reply does not address the customer’s specific issue about the shipment and the use of SurePost, lacks empathy or apology, and only offers a generic link for further contact. It provides a next step but is otherwise unhelpful."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is relevant and actionable, but it lacks specific details about the delivery problem and the brand’s standard process. The tone is polite but somewhat generic. Overall, it is a decent but not exceptional response."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is relevant and actionable, but it lacks specific details about the delivery problem and the brand’s standard process. The tone is polite but somewhat generic. Overall, it is a decent but not exceptional response."
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 10,
+    "customer_text": "@AmazonHelp It’s shows on the amazon website that there’s no current expected delivery date as @user is delayed it’s been shipped by Amazon but not movement from UPS I think it’s time to use another carrier this is ridiculous I was supposed to receive my items days ago",
+    "actual_reply": "@user Apologies, have you received any emails in relation to the delayed orders? ^JJ",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply apologizes but only asks if the customer received emails, which does not directly address the lack of delivery date or carrier issue. It lacks a clear next step and is only moderately empathetic."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply apologizes but only asks if the customer received emails, which does not directly address the lack of delivery date or carrier issue. It lacks a clear next step and is only moderately empathetic."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 2,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a typical first step, but it does not address the specific shipping delay or carrier concern. It is professional and consistent with real agent style, but it offers limited actionable guidance beyond asking for the ID."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 2,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a typical first step, but it does not address the specific shipping delay or carrier concern. It is professional and consistent with real agent style, but it offers limited actionable guidance beyond asking for the ID."
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 11,
+    "customer_text": "@AmazonHelp I’m concerned about my #PokemonUltraSunMoon order. It hasn’t shipped yet and it was promised for Friday. You have already failed to ship an order on time for me once this year. This one is more urgent. You simply cannot fail me again.",
+    "actual_reply": "@user I'm sorry for the trouble! I understand your concern with your order. It's not unusual for orders to ship closer to the delivery date. If you don't receive your order on Friday please let us know. ^LR",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and offers a next step, but it lacks specific reference to the customer’s past delay and urgency, and it does not propose any immediate corrective action."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and offers a next step, but it lacks specific reference to the customer’s past delay and urgency, and it does not propose any immediate corrective action."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a reasonable next step, but it does not address the shipping deadline or urgency expressed by the customer. It is consistent with typical support behavior but lacks empathy and specific reassurance."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a reasonable next step, but it does not address the shipping deadline or urgency expressed by the customer. It is consistent with typical support behavior but lacks empathy and specific reassurance."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 12,
+    "customer_text": "Always put your shoes on when the Amazon food delivery driver is close by because you might have to meet them in the street",
+    "actual_reply": "@user I'm sorry for any inconvenience this has caused; have you recently had an order improperly delivered to your location? ^WM",
+    "system_reply": "",
+    "baseline_reply": "Thank you for your feedback! We value your input and will use it to improve our service. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the customer’s comment about putting shoes on for a delivery driver, offers no relevant information or next steps, and is not grounded in the specific issue. The tone is neutral but irrelevant, and no actionable guidance is provided."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the customer’s comment about putting shoes on for a delivery driver, offers no relevant information or next steps, and is not grounded in the specific issue. The tone is neutral but irrelevant, and no actionable guidance is provided."
+    },
+    "baseline_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply is generic and does not address the customer’s specific comment about meeting delivery drivers. It lacks any concrete next steps or empathy, making it low on relevance, grounding, and actionability, with only a neutral professional tone."
+    },
+    "baseline_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply is generic and does not address the customer’s specific comment about meeting delivery drivers. It lacks any concrete next steps or empathy, making it low on relevance, grounding, and actionability, with only a neutral professional tone."
+    },
+    "system_overall_avg": 1.0
+  },
+  {
+    "idx": 13,
+    "customer_text": "@AmazonHelp ... i don't remember. This is third time i have complaint about your guys. Even for prime members. @user delivery guys are far better..",
+    "actual_reply": "@user Sorry for the trouble with the delivery. Have you reported it to the support team here: https://t.co/TxK11znixD ? ^HR",
+    "system_reply": "",
+    "baseline_reply": "Thank you for your feedback! We value your input and will use it to improve our service. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the delivery issue and offers a next step, but it is generic and lacks specific empathy or details about the customer’s repeated complaints. It is consistent with a typical support response but not highly tailored."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the delivery issue and offers a next step, but it is generic and lacks specific empathy or details about the customer’s repeated complaints. It is consistent with a typical support response but not highly tailored."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 14,
+    "customer_text": "Wow, @user Pantry is a unique service. Forged signature, lost delivery and customer service adept at arse-covering. Avoid. #amazonpantry",
+    "actual_reply": "@user This is not the experience we hope you to have! What information/options did we provide when you reached us? ^CS",
+    "system_reply": "",
+    "baseline_reply": "Thank you for your feedback! We value your input and will use it to improve our service. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 2,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply is generic and does not address the specific complaints about forged signature, lost delivery, or poor service. It lacks empathy and does not offer a clear next step, so relevance and actionability are low. Grounding and tone are slightly better but still weak."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 2,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply is generic and does not address the specific complaints about forged signature, lost delivery, or poor service. It lacks empathy and does not offer a clear next step, so relevance and actionability are low. Grounding and tone are slightly better but still weak."
+    },
+    "baseline_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply is generic and does not address the specific complaint about forged signature, lost delivery, or poor service. It lacks empathy, brand tone, and actionable steps, making it poorly grounded and ineffective."
+    },
+    "baseline_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply is generic and does not address the specific complaint about forged signature, lost delivery, or poor service. It lacks empathy, brand tone, and actionable steps, making it poorly grounded and ineffective."
+    },
+    "system_overall_avg": 1.0
+  },
+  {
+    "idx": 15,
+    "customer_text": "@user Order date 07-Oct-2017 Order # 171-6132696-2878733 but not able to make payment even after inserting right otp",
+    "actual_reply": "@user Please don’t provide your order details as it is personal information. Our Twitter page is visible to the public. ^MS",
+    "system_reply": "",
+    "baseline_reply": "We understand your concern about the charge. Please reach out via DM with your account info so we can review this. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply fails to address the payment issue, instead warns about sharing order details. It lacks empathy, actionable steps, and does not reflect typical support behavior."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply fails to address the payment issue, instead warns about sharing order details. It lacks empathy, actionable steps, and does not reflect typical support behavior."
+    },
+    "baseline_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the payment failure issue, requests sensitive info via DM, and lacks empathy or clear next steps."
+    },
+    "baseline_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the payment failure issue, requests sensitive info via DM, and lacks empathy or clear next steps."
+    },
+    "system_overall_avg": 1.0
+  },
+  {
+    "idx": 16,
+    "customer_text": "@AmazonHelp I gave it another day and still not delivered. 😡",
+    "actual_reply": "@user I'm so sorry for the trouble. If you have a moment, please contact us by phone or chat here: https://t.co/hApLpMlfHN. ^LH",
+    "system_reply": "I’m sorry your package still hasn’t arrived. Please let us help",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 1,
+      "overall": 3,
+      "reasoning": "Apologizes and acknowledges delay but lacks next steps."
+    },
+    "system_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 1,
+      "overall": 3,
+      "reasoning": "Apologizes and acknowledges delay but lacks next steps."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the delay, asks for the order ID, and offers to investigate—relevant, realistic, empathetic, and gives a clear next step."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the delay, asks for the order ID, and offers to investigate—relevant, realistic, empathetic, and gives a clear next step."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 17,
+    "customer_text": "@user 408-6551615-4430709 .i returned product.and item deliveryed. But exchange still not initiated.1st and worst service by Amazon.",
+    "actual_reply": "@user Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public. ^AK 3/3",
+    "system_reply": "",
+    "baseline_reply": "We understand your concern about the refund. Please contact us via DM with your order details and we'll assist you right away. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply fails to address the customer’s return/exchange issue, offers no solution or next steps, and only reminds about privacy. It is minimally professional but lacks empathy and actionable guidance."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply fails to address the customer’s return/exchange issue, offers no solution or next steps, and only reminds about privacy. It is minimally professional but lacks empathy and actionable guidance."
+    },
+    "baseline_eval_1": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 2,
+      "reasoning": "The reply mentions a refund instead of the requested exchange, so it partially addresses the issue. It follows a generic support style but conflicts with the brand’s policy of not requesting order details via DM. The tone is professional but lacks empathy. It offers a next step (DM), but that step is not aligned with brand guidelines."
+    },
+    "baseline_eval_2": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 2,
+      "reasoning": "The reply mentions a refund instead of the requested exchange, so it partially addresses the issue. It follows a generic support style but conflicts with the brand’s policy of not requesting order details via DM. The tone is professional but lacks empathy. It offers a next step (DM), but that step is not aligned with brand guidelines."
+    },
+    "system_overall_avg": 1.0
+  },
+  {
+    "idx": 18,
+    "customer_text": "@user @AmazonHelp ordered 2 UAV batteries on 9/6, w/ expected delivery 9/28. Delivery was then switched to 10/16. Hasn't been shipped yet.",
+    "actual_reply": "@user I'm sorry for wait, Helder. Have you received an e-mail stating any sort of delay? ^MH",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the delay and asks a relevant question, but it lacks specific order details, a clear next step, and polished language. It is moderately grounded and professional, but overall only average."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the delay and asks a relevant question, but it lacks specific order details, a clear next step, and polished language. It is moderately grounded and professional, but overall only average."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a typical next step. It does not mention the specific shipping delay or offer a solution, so relevance is moderate. Grounding and tone are appropriate for a support agent, and the actionability is clear by asking for the order ID. Overall, it is a solid but not fully comprehensive response."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a typical next step. It does not mention the specific shipping delay or offer a solution, so relevance is moderate. Grounding and tone are appropriate for a support agent, and the actionability is clear by asking for the order ID. Overall, it is a solid but not fully comprehensive response."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 19,
+    "customer_text": "@AmazonHelp there is no way that's getting here by Fri. its already Thur and it hasn't been shipped. maybe i should just cancel the #AmazonPrime",
+    "actual_reply": "@user Hey, since today is only Wednesday, your parcel seems to be progressing fine and will be shipped on time for delivery on Friday.^MA",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply misstates the current day, assumes shipment will occur, and ignores the customer’s concern about cancellation. It is friendly but lacks empathy and does not provide a clear next step."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply misstates the current day, assumes shipment will occur, and ignores the customer’s concern about cancellation. It is friendly but lacks empathy and does not provide a clear next step."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 20,
+    "customer_text": "@AmazonHelp Well ok but @user said it’s been dlvd so I can’t see how they will bother to deliver it now! I think they have washed their hands of it",
+    "actual_reply": "@user We're definitely here to help! Please reach out to us by phone here: https://t.co/JzP7hlA23B ^SE",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a reasonable next step, but it does not fully address the customer’s confusion about delivery status or offer a clear resolution path. The tone is professional but lacks empathy, and the actionability is limited to a single request without further guidance."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue and requests the order ID, which is a reasonable next step, but it does not fully address the customer’s confusion about delivery status or offer a clear resolution path. The tone is professional but lacks empathy, and the actionability is limited to a single request without further guidance."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 21,
+    "customer_text": "@AmazonHelp The seller advertised an estimated delivery of the 3rd-4th Nov. The parcel has not arrived. Now I'm being told to wait until the 20th despite them advising the delivery appears to have been made! I have paid for an order in good faith and I feel i'm now being penalised. 😡😡",
+    "actual_reply": "@user I understand your concern, Lauren. We are here to help! For further clarification, could you confirm the carrier for delivery as shown in your orders? What is the current tracking indicate?: https://t.co/aaDyEz1VgE",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and asks for tracking details, which is a typical next step. It is professional and empathetic, but it does not directly address the delay or penalty concerns, so relevance is slightly lower."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and asks for tracking details, which is a typical next step. It is professional and empathetic, but it does not directly address the delay or penalty concerns, so relevance is slightly lower."
+    },
+    "baseline_eval_1": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue but only asks for the order ID, missing specific reference to the delivery delay or penalty. It is a realistic agent response, uses a professional tone, and gives a clear next step, but lacks depth in addressing the customer's concerns."
+    },
+    "baseline_eval_2": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the issue but only asks for the order ID, missing specific reference to the delivery delay or penalty. It is a realistic agent response, uses a professional tone, and gives a clear next step, but lacks depth in addressing the customer's concerns."
+    },
+    "system_overall_avg": 4.0
+  },
+  {
+    "idx": 22,
+    "customer_text": "Hello @user, Is there a problem with buying and shipping fiber supplements? I placed 2 order from different sites and till now no response",
+    "actual_reply": "@user Hi. I'm sorry to hear that. What was the estimated delivery date given at the time the order was placed? ^DC",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, requests the necessary order ID, and offers to investigate—aligning well with typical support practices. It is professional, empathetic, and gives a clear next step, though it could include a brief apology for the delay to match the brand’s tone more closely."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue, requests the necessary order ID, and offers to investigate—aligning well with typical support practices. It is professional, empathetic, and gives a clear next step, though it could include a brief apology for the delay to match the brand’s tone more closely."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 23,
+    "customer_text": "When I ordered from @user Prime and would’ve quite liked an excuse to lounge on the sofa all day while waiting for delivery, it arrived 10am sharp. NOW, when I have things to do, the blooming thing isn’t even saying ‘dispatched’. Quite the relatable #firstworldtweet.",
+    "actual_reply": "@user Hi, when you placed the order did you receive an email with an expected delivery date?^BZ",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the customer’s concern about the missing ‘dispatched’ status, offers no solution or empathy, and merely asks a vague question about an email. It lacks relevance, grounding, and actionable guidance."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the customer’s concern about the missing ‘dispatched’ status, offers no solution or empathy, and merely asks a vague question about an email. It lacks relevance, grounding, and actionable guidance."
+    },
+    "baseline_eval_1": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 2,
+      "reasoning": "The reply apologizes but does not address the specific complaint about the missing ‘dispatched’ status or the early arrival. It is a typical generic request for order ID, which is somewhat grounded, but lacks empathy and a clear next step beyond asking for the ID via DM."
+    },
+    "baseline_eval_2": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 2,
+      "overall": 2,
+      "reasoning": "The reply apologizes but does not address the specific complaint about the missing ‘dispatched’ status or the early arrival. It is a typical generic request for order ID, which is somewhat grounded, but lacks empathy and a clear next step beyond asking for the ID via DM."
+    },
+    "system_overall_avg": 1.0
+  },
+  {
+    "idx": 24,
+    "customer_text": "@AmazonHelp Thanks, but I needed it today, tomorrow is not really helpful. That's why I ordered with Prime for Sunday delivery. If it doesn't come today as expected can I cancel the order?",
+    "actual_reply": "@user Unfortunately once an order is shipped it can no longer be canceled in the traditional sense. However, you can effectively cancel the order by refusing delivery. In which case once we receive the refused item, we will refund you once it has been processed. ^JD",
+    "system_reply": "",
+    "baseline_reply": "We're sorry about the trouble with your order. Please share your order ID via DM so we can look into this for you. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "baseline_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 2,
+      "overall": 1,
+      "reasoning": "The reply fails to address the cancellation request, lacks policy context, and only asks for order ID without providing cancellation guidance."
+    },
+    "baseline_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 2,
+      "overall": 1,
+      "reasoning": "The reply fails to address the cancellation request, lacks policy context, and only asks for order ID without providing cancellation guidance."
+    },
+    "system_overall_avg": 3.0
+  },
+  {
+    "idx": 25,
+    "customer_text": "Amazon is giving me a lot of stress. It failed to pick up the return item for the past three days. Reqst dt sept 29th. @user @AmazonHelp",
+    "actual_reply": "@user Sorry about that. Kindly get in touch with us here: https://t.co/4RodKQYjp0 and we’ll be glad to help you. ^NS",
+    "system_reply": "",
+    "baseline_reply": "We understand your concern about the refund. Please contact us via DM with your order details and we'll assist you right away. ^AA",
+    "system_eval_1": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and offers a next step, but lacks specific details about the pickup delay and date. It is consistent with typical support tone and provides a clear action."
+    },
+    "system_eval_2": {
+      "relevance": 3,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the issue and offers a next step, but lacks specific details about the pickup delay and date. It is consistent with typical support tone and provides a clear action."
+    },
+    "baseline_eval_1": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply partially addresses the issue by offering help, but incorrectly focuses on a refund instead of the pickup delay. It follows a typical agent style by asking for order details, but the tone is only moderately empathetic. The next step is clear—contact via DM—so actionability is high. Overall, the response is acceptable but not fully aligned with the customer’s specific concern."
+    },
+    "baseline_eval_2": {
+      "relevance": 2,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply partially addresses the issue by offering help, but incorrectly focuses on a refund instead of the pickup delay. It follows a typical agent style by asking for order details, but the tone is only moderately empathetic. The next step is clear—contact via DM—so actionability is high. Overall, the response is acceptable but not fully aligned with the customer’s specific concern."
+    },
+    "system_overall_avg": 4.0
+  },
+  {
+    "idx": 26,
+    "customer_text": "On the plus side I tried to return the cat food I accidentally bought and amazon reimbursed me and told me I didn’t need to send it back. You rock @user !!",
+    "actual_reply": "@user Thanks Courtney! We're happy to be of service! ^CC",
+    "system_reply": "",
+    "baseline_reply": "Thank you for your feedback! We value your input and will use it to improve our service. ^AA",
+    "system_eval_1": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply does not directly address the customer’s specific situation or name, uses a generic thank you that mismatches the customer’s greeting, and offers no next steps. It is somewhat friendly but lacks the professional detail expected in support communication."
+    },
+    "system_eval_2": {
+      "relevance": 2,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply does not directly address the customer’s specific situation or name, uses a generic thank you that mismatches the customer’s greeting, and offers no next steps. It is somewhat friendly but lacks the professional detail expected in support communication."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 3,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3,
+      "reasoning": "Error parsing JSON"
+    },
+    "system_overall_avg": 2.0
+  },
+  {
+    "idx": 27,
+    "customer_text": "As anticipated, finally backed out onto a box. @user will need a refund. Lucky my car wasn’t damaged. Pls talk to your driver. #ridiculous https://t.co/ju3qIM5WNh",
+    "actual_reply": "@user I'm sorry it was left right by the garage! We'd like to link this feedback to your specific order: https://t.co/cxOnLJ2vox^BH",
+    "system_reply": "",
+    "baseline_reply": "We understand your concern about the refund. Please contact us via DM with your order details and we'll assist you right away. ^AA",
+    "system_eval_1": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the refund request, driver issue, or offer any solution. It is vague, lacks empathy, and provides no actionable next step."
+    },
+    "system_eval_2": {
+      "relevance": 1,
+      "grounding": 1,
+      "tone": 2,
+      "actionability": 1,
+      "overall": 1,
+      "reasoning": "The reply does not address the refund request, driver issue, or offer any solution. It is vague, lacks empathy, and provides no actionable next step."
+    },
+    "baseline_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the refund request and directs the customer to provide order details, which is relevant and actionable. It follows a typical support pattern but lacks explicit empathy or mention of the driver issue, slightly lowering tone. Overall, it is a solid response."
+    },
+    "baseline_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the refund request and directs the customer to provide order details, which is relevant and actionable. It follows a typical support pattern but lacks explicit empathy or mention of the driver issue, slightly lowering tone. Overall, it is a solid response."
+    },
+    "system_overall_avg": 1.0
+  },
+  {
+    "idx": 28,
+    "customer_text": "@AmazonHelp Is this item refundable in case this doesn't work it is Amazon fulfilled btw https://t.co/cvNDPfmaKS",
+    "actual_reply": "@user I do get your concern. You may refer to our returns policy here: https://t.co/S4eX6UOjIb. ^MM",
+    "system_reply": "",
+    "baseline_reply": "We understand your concern about the refund. Please contact us via DM with your order details and we'll assist you right away. ^AA",
+    "system_eval_1": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply directs the customer to the returns policy, addressing the refund question, uses a professional tone, and provides a clear next step."
+    },
+    "system_eval_2": {
+      "relevance": 4,
+      "grounding": 4,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply directs the customer to the returns policy, addressing the refund question, uses a professional tone, and provides a clear next step."
+    },
+    "baseline_eval_1": {
+      "relevance": 3,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the refund concern and offers a next step, but it lacks specific policy details and uses a DM approach that may not align with typical support practices. It is moderately relevant, poorly grounded, somewhat professional, and actionable."
+    },
+    "baseline_eval_2": {
+      "relevance": 3,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 4,
+      "overall": 3,
+      "reasoning": "The reply acknowledges the refund concern and offers a next step, but it lacks specific policy details and uses a DM approach that may not align with typical support practices. It is moderately relevant, poorly grounded, somewhat professional, and actionable."
+    },
+    "system_overall_avg": 4.0
+  },
+  {
+    "idx": 29,
+    "customer_text": "Shout out to @user customer service!! They made a 5-year-old who's karaoke machine stopped working right after the return date closed very happy by sending a replacement right away! THANK YOU!",
+    "actual_reply": "@user We are happy to help! Let us know if you have any issues with your replacement! :) ^JS",
+    "system_reply": "",
+    "baseline_reply": "Thank you for your feedback! We value your input and will use it to improve our service. ^AA",
+    "system_eval_1": {
+      "relevance": 4,
+      "grounding": 5,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the customer’s positive feedback and offers further assistance, which is relevant and consistent with typical support behavior. It maintains a friendly, brand‑appropriate tone and gives a clear next step (to report any issues)."
+    },
+    "system_eval_2": {
+      "relevance": 4,
+      "grounding": 5,
+      "tone": 4,
+      "actionability": 4,
+      "overall": 4,
+      "reasoning": "The reply acknowledges the customer’s positive feedback and offers further assistance, which is relevant and consistent with typical support behavior. It maintains a friendly, brand‑appropriate tone and gives a clear next step (to report any issues)."
+    },
+    "baseline_eval_1": {
+      "relevance": 1,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply is generic and does not address the customer’s specific praise or mention the replacement. It is somewhat consistent with a generic support tone but lacks brand‑specific language. It offers no next step, so actionability is low. Overall, the response is below average."
+    },
+    "baseline_eval_2": {
+      "relevance": 1,
+      "grounding": 2,
+      "tone": 3,
+      "actionability": 1,
+      "overall": 2,
+      "reasoning": "The reply is generic and does not address the customer’s specific praise or mention the replacement. It is somewhat consistent with a generic support tone but lacks brand‑specific language. It offers no next step, so actionability is low. Overall, the response is below average."
+    },
+    "system_overall_avg": 4.0
+  }
+]

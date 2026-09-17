@@ -1,0 +1,27 @@
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Embeddings (local, free)
+sentence-transformers>=2.2.0
+
+# Vector store (local, free)
+chromadb>=0.4.0
+
+# LLM API (free tier)
+groq>=0.4.0
+
+# Evaluation
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Demo UI
+gradio>=4.0.0
+
+# Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# Dataset
+kaggle>=1.5.0
+datasets>=2.14.0

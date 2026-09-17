@@ -1,0 +1,21 @@
+{
+  "system": {
+    "accuracy": 0.5227272727272727,
+    "precision": 0.6612903225806451,
+    "recall": 0.328,
+    "f1": 0.4385026737967914
+  },
+  "baseline": {
+    "accuracy": 0.6318181818181818,
+    "precision": 0.6692307692307692,
+    "recall": 0.696,
+    "f1": 0.6823529411764706
+  },
+  "criteria_distribution": {
+    "account_access_intent": 27,
+    "account_security_keyword": 6,
+    "low_confidence": 20,
+    "legal_keyword": 7,
+    "high_frustration_sensitive_intent": 2
+  }
+}

@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+venv/
+env/
+
+# Data files (too large for git)
+data/twcs/
+*.csv
+*.zip
+
+# Model cache
+models/cache/
+.cache/
+
+# ChromaDB data
+chroma_db/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
