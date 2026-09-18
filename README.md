@@ -1,7 +1,6 @@
-# Amazon Help AI Support Agent
+# SupportSense — Agentic Customer Support Pipeline
 
-> Hiver SDE Intern Take-Home Assignment  
-> An AI customer support agent for **AmazonHelp** that classifies intents, drafts grounded replies, and makes escalation decisions — with rigorous evaluation proving it works.
+> An end-to-end agentic AI support system built on **2.8M real AmazonHelp tweets** — classifying intents via RAG few-shot LLM, drafting grounded replies, and making scored escalation decisions — with rigorous evaluation proving it beats trivial baselines.
 
 ## Quick Start — Reproduce Results in Under 10 Minutes
 
