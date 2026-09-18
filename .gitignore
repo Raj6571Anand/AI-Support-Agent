@@ -30,3 +30,7 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Added by agent
+data/*.json
+data/*.jsonl

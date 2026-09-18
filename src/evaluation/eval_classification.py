@@ -8,7 +8,7 @@ import json
 import numpy as np
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
-from src.pipeline.classifier import KeywordClassifier, EmbeddingClassifier, HybridClassifier
+from src.pipeline.classifier import KeywordClassifier, EmbeddingClassifier, HybridClassifier, RAGClassifier
 
 def bootstrap_ci(y_true, y_pred, metric_fn, n_bootstrap=1000, ci=0.95):
     scores = []
@@ -47,12 +47,22 @@ def main():
     kw = KeywordClassifier()
     emb = EmbeddingWrapper(EmbeddingClassifier())
     hybrid = HybridClassifier()
+    
+    # RAG classifier (needs ChromaDB to be built)
+    try:
+        rag = RAGClassifier()
+        has_rag = True
+        print("RAGClassifier loaded successfully")
+    except Exception as e:
+        has_rag = False
+        print(f"RAGClassifier not available (ChromaDB not built?): {e}")
 
     y_true = []
     preds_freq = []
     preds_kw = []
     preds_emb = []
     preds_hyb = []
+    preds_rag = []
 
     for item in tqdm(golden_set, desc="Evaluating Classifiers"):
         text = item.get('customer_text', '')
@@ -80,13 +90,22 @@ def main():
             preds_hyb.append(res_hyb.get('intent', 'unknown'))
         except Exception:
             preds_hyb.append('unknown')
+            
+        if has_rag:
+            try:
+                res_rag = rag.classify(text)
+                preds_rag.append(res_rag.get('intent', 'unknown'))
+            except Exception:
+                preds_rag.append('unknown')
 
     models = [
         ("Most Frequent", preds_freq),
         ("Keyword", preds_kw),
         ("Embedding", preds_emb),
-        ("Hybrid", preds_hyb)
+        ("Hybrid", preds_hyb),
     ]
+    if has_rag:
+        models.append(("RAG Few-Shot", preds_rag))
 
     print("\n| Classifier     | Accuracy | Macro F1 | Micro F1 | 95% CI          |")
     print("|----------------|----------|----------|----------|-----------------|")

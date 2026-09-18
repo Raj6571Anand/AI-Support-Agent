@@ -1,0 +1,81 @@
+{
+  "golden_set_size": 220,
+  "true_escalation_rate": 0.5681818181818182,
+  "aggregation_results": {
+    "max": {
+      "recall_at_p80": {
+        "threshold": 0.87,
+        "precision": 0.7142857142857143,
+        "recall": 0.24,
+        "f1": 0.3592814371257485,
+        "accuracy": 0.5136363636363637,
+        "tp": 30,
+        "fp": 12,
+        "fn": 95,
+        "tn": 83
+      },
+      "cost_optimal": {
+        "threshold": 0.2,
+        "precision": 0.589622641509434,
+        "recall": 1.0,
+        "f1": 0.741839762611276,
+        "accuracy": 0.6045454545454545,
+        "tp": 125,
+        "fp": 87,
+        "fn": 0,
+        "tn": 8,
+        "cost": 87.0
+      },
+      "best_f1": {
+        "threshold": 0.26,
+        "precision": 0.5933014354066986,
+        "recall": 0.992,
+        "f1": 0.7425149700598802,
+        "accuracy": 0.6090909090909091,
+        "tp": 124,
+        "fp": 85,
+        "fn": 1,
+        "tn": 10
+      },
+      "fn_cost_ratio": "3:1"
+    },
+    "weighted_mean": {
+      "recall_at_p80": {
+        "threshold": 0.29,
+        "precision": 0.8333333333333334,
+        "recall": 0.08,
+        "f1": 0.145985401459854,
+        "accuracy": 0.4681818181818182,
+        "tp": 10,
+        "fp": 2,
+        "fn": 115,
+        "tn": 93
+      },
+      "cost_optimal": {
+        "threshold": 0.01,
+        "precision": 0.5849056603773585,
+        "recall": 0.992,
+        "f1": 0.7359050445103856,
+        "accuracy": 0.5954545454545455,
+        "tp": 124,
+        "fp": 88,
+        "fn": 1,
+        "tn": 7,
+        "cost": 91.0
+      },
+      "best_f1": {
+        "threshold": 0.01,
+        "precision": 0.5849056603773585,
+        "recall": 0.992,
+        "f1": 0.7359050445103856,
+        "accuracy": 0.5954545454545455,
+        "tp": 124,
+        "fp": 88,
+        "fn": 1,
+        "tn": 7,
+        "cost": 91.0
+      },
+      "fn_cost_ratio": "3:1"
+    }
+  }
+}

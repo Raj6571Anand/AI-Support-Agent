@@ -1,0 +1,315 @@
+{
+  "confusion_matrix": {
+    "account_access": {
+      "account_access": 15,
+      "feedback": 3,
+      "general_inquiry": 3,
+      "order_issue": 1,
+      "payment_billing": 1,
+      "product_issue": 0,
+      "refund_return": 0,
+      "subscription": 0
+    },
+    "feedback": {
+      "account_access": 2,
+      "feedback": 29,
+      "general_inquiry": 4,
+      "order_issue": 5,
+      "payment_billing": 0,
+      "product_issue": 1,
+      "refund_return": 0,
+      "subscription": 1
+    },
+    "general_inquiry": {
+      "account_access": 5,
+      "feedback": 4,
+      "general_inquiry": 6,
+      "order_issue": 0,
+      "payment_billing": 0,
+      "product_issue": 1,
+      "refund_return": 1,
+      "subscription": 2
+    },
+    "order_issue": {
+      "account_access": 3,
+      "feedback": 8,
+      "general_inquiry": 14,
+      "order_issue": 21,
+      "payment_billing": 1,
+      "product_issue": 0,
+      "refund_return": 0,
+      "subscription": 1
+    },
+    "payment_billing": {
+      "account_access": 0,
+      "feedback": 1,
+      "general_inquiry": 7,
+      "order_issue": 0,
+      "payment_billing": 15,
+      "product_issue": 0,
+      "refund_return": 1,
+      "subscription": 0
+    },
+    "product_issue": {
+      "account_access": 5,
+      "feedback": 5,
+      "general_inquiry": 8,
+      "order_issue": 1,
+      "payment_billing": 0,
+      "product_issue": 7,
+      "refund_return": 2,
+      "subscription": 1
+    },
+    "refund_return": {
+      "account_access": 0,
+      "feedback": 2,
+      "general_inquiry": 6,
+      "order_issue": 0,
+      "payment_billing": 0,
+      "product_issue": 0,
+      "refund_return": 12,
+      "subscription": 0
+    },
+    "subscription": {
+      "account_access": 1,
+      "feedback": 0,
+      "general_inquiry": 1,
+      "order_issue": 0,
+      "payment_billing": 0,
+      "product_issue": 0,
+      "refund_return": 1,
+      "subscription": 12
+    }
+  },
+  "flagged_pairs": [
+    {
+      "pair": [
+        "account_access",
+        "feedback"
+      ],
+      "i_as_j": 3,
+      "j_as_i": 2,
+      "rate_i": 0.13043478260869565,
+      "rate_j": 0.047619047619047616,
+      "symmetric_rate": 0.07692307692307693,
+      "total_confused": 5,
+      "support_i": 23,
+      "support_j": 42,
+      "examples": [
+        "@AmazonHelp hello I have been waiting for an account specialist to be in touch with me for 2 years now \u263a",
+        "@AmazonHelp Thank you please help me asap",
+        "@AmazonHelp I have sent an email outlining exactly what I have outlined in the stream of tweets. Thank you for your assistance."
+      ]
+    },
+    {
+      "pair": [
+        "account_access",
+        "general_inquiry"
+      ],
+      "i_as_j": 3,
+      "j_as_i": 5,
+      "rate_i": 0.13043478260869565,
+      "rate_j": 0.2631578947368421,
+      "symmetric_rate": 0.19047619047619047,
+      "total_confused": 8,
+      "support_i": 23,
+      "support_j": 19,
+      "examples": [
+        "@AmazonHelp Yes &amp; was told to call them directly so they can gather her account info. She has spoken to them numerous times, with no results yet",
+        "@AmazonHelp I previously had security issues w an account &amp; that process took forever to resolve and so in response I closed that account &amp; created a new one and have come to find that I have been charged $100 via the account amazon confirmed had been \"closed\". I don't feel my info is secure",
+        "@AmazonHelp no I wasn't"
+      ]
+    },
+    {
+      "pair": [
+        "account_access",
+        "order_issue"
+      ],
+      "i_as_j": 1,
+      "j_as_i": 3,
+      "rate_i": 0.043478260869565216,
+      "rate_j": 0.0625,
+      "symmetric_rate": 0.056338028169014086,
+      "total_confused": 4,
+      "support_i": 23,
+      "support_j": 48,
+      "examples": [
+        "@AmazonHelp I have already mailed they told me to wait for 7 day but now it's almost 60 day still not resolved please have a look Thank you",
+        "Man, ordered @user but got @user. @user next time you\u2019re getting Monopoly money. Disappointing!",
+        "@AmazonHelp No email id is attached with my account and above form is forcing me to put thr email. Now again worst form"
+      ]
+    },
+    {
+      "pair": [
+        "account_access",
+        "product_issue"
+      ],
+      "i_as_j": 0,
+      "j_as_i": 5,
+      "rate_i": 0.0,
+      "rate_j": 0.1724137931034483,
+      "symmetric_rate": 0.09615384615384616,
+      "total_confused": 5,
+      "support_i": 23,
+      "support_j": 29,
+      "examples": [
+        "Hey @user @user I keep getting this error when I try to play a video. I\u2019ve already switched my account back to US. Help plz. https://t.co/hRJ6QZ7lGZ",
+        "@AmazonHelp And @user downloads won't play if I don't log in on the device regularly. I bought it to watch downloads 'cause I don't have Internet.",
+        "Hi @user doesn\u2019t work with my @user Echo\u2026..have you activated it for the India region? The Skill is missing https://t.co/7rnTW1eHco"
+      ]
+    },
+    {
+      "pair": [
+        "feedback",
+        "general_inquiry"
+      ],
+      "i_as_j": 4,
+      "j_as_i": 4,
+      "rate_i": 0.09523809523809523,
+      "rate_j": 0.21052631578947367,
+      "symmetric_rate": 0.13114754098360656,
+      "total_confused": 8,
+      "support_i": 42,
+      "support_j": 19,
+      "examples": [
+        "@AmazonHelp I updated all the details required by you on the link shared by you. And after that i did not get any uodate. This kind of service is provided by #AmazonPrime @AmazonHelp @user @user",
+        "@AmazonHelp Well I received an email stating someone will try their best to respond within 6 hours. How good is that if time sensitive #amazon #CustomerService",
+        "@AmazonHelp its the last day of sale but issue of brand &amp; size still there..average size like M/L must b there for major brands in better collections.."
+      ]
+    },
+    {
+      "pair": [
+        "feedback",
+        "order_issue"
+      ],
+      "i_as_j": 5,
+      "j_as_i": 8,
+      "rate_i": 0.11904761904761904,
+      "rate_j": 0.16666666666666666,
+      "symmetric_rate": 0.14444444444444443,
+      "total_confused": 13,
+      "support_i": 42,
+      "support_j": 48,
+      "examples": [
+        "@AmazonHelp ... i don't remember. This is third time i have complaint about your guys. Even for prime members. @user delivery guys are far better..",
+        "Lol ever since @user started working with @user the service has gotten ridiculously bad. Prime on time- doesn\u2019t happen anymore!!\ud83d\ude24\ud83d\ude24\ud83d\ude24",
+        "FedEx dropped my cousin\u2019s amazon echo off at his place and someone stole it while he was at work lmaoooooo"
+      ]
+    },
+    {
+      "pair": [
+        "feedback",
+        "product_issue"
+      ],
+      "i_as_j": 1,
+      "j_as_i": 5,
+      "rate_i": 0.023809523809523808,
+      "rate_j": 0.1724137931034483,
+      "symmetric_rate": 0.08450704225352113,
+      "total_confused": 6,
+      "support_i": 42,
+      "support_j": 29,
+      "examples": [
+        "@user Not sure if you would be interested in knowing terrible experience I had while trying to rectify problem with my A/C @user",
+        "@AmazonHelp so you would be able to replace the broken one you sent me.",
+        "@AmazonHelp Why can\u2019t I buy the regular version for Kindle? It keeps taking me back to the Sparknotes version https://t.co/sALoIF5lBv"
+      ]
+    },
+    {
+      "pair": [
+        "general_inquiry",
+        "order_issue"
+      ],
+      "i_as_j": 0,
+      "j_as_i": 14,
+      "rate_i": 0.0,
+      "rate_j": 0.2916666666666667,
+      "symmetric_rate": 0.208955223880597,
+      "total_confused": 14,
+      "support_i": 19,
+      "support_j": 48,
+      "examples": [
+        "@user Could someone call me please. I am unable to get through customer service as the IVR says unable to find order. My number is 8130148103.",
+        "@AmazonHelp I have been keeping eye everywhere Twitter, email, phone, website tracking,I mean currently getting my package delivered to me is 2nd priority,1st priority is ceeing wen&amp;thru which medium @AmazonHelp @user will atleast update me of status or share some info of wats going on",
+        "@AmazonHelp @user @AmazonHelp 2 items attempted to be delivered while I am here in my house! Both paid for postage x2 but being not delivered as 1!"
+      ]
+    },
+    {
+      "pair": [
+        "general_inquiry",
+        "payment_billing"
+      ],
+      "i_as_j": 0,
+      "j_as_i": 7,
+      "rate_i": 0.0,
+      "rate_j": 0.2916666666666667,
+      "symmetric_rate": 0.16279069767441862,
+      "total_confused": 7,
+      "support_i": 19,
+      "support_j": 24,
+      "examples": [
+        "@AmazonHelp (2/2) bank account says that a transaction has been made on Amazon, which is weird, and I wish for a refund. Got no help via Email.",
+        "Hey, @user, how about you not charge me $400 for the Prime Wardrobe items bc @user is slow? Also, your service rep sounds drunk.",
+        "@AmazonHelp I want to refund two giftcards that were bought on my credit card ending in 7310 a 100 and 50 gift cards. I didnt purchase that"
+      ]
+    },
+    {
+      "pair": [
+        "general_inquiry",
+        "product_issue"
+      ],
+      "i_as_j": 1,
+      "j_as_i": 8,
+      "rate_i": 0.05263157894736842,
+      "rate_j": 0.27586206896551724,
+      "symmetric_rate": 0.1875,
+      "total_confused": 9,
+      "support_i": 19,
+      "support_j": 29,
+      "examples": [
+        "@user how can I get 5.1 audio on Windows 10 ?",
+        "@user I received an damaged product kindly refund or help me in replacement. #402-9856538-3107519",
+        "Hey @AmazonHelp I got an echo before it launched in India and I'm still on the uk server, how do I get it to work for india?"
+      ]
+    },
+    {
+      "pair": [
+        "general_inquiry",
+        "refund_return"
+      ],
+      "i_as_j": 1,
+      "j_as_i": 6,
+      "rate_i": 0.05263157894736842,
+      "rate_j": 0.3,
+      "symmetric_rate": 0.1794871794871795,
+      "total_confused": 7,
+      "support_i": 19,
+      "support_j": 20,
+      "examples": [
+        "@AmazonHelp And I don't want an invoice. I want to give the recipient the ability to return the gift without knowing how much I paid.",
+        "@user 408-6551615-4430709 .i returned product.and item deliveryed. But exchange still not initiated.1st and worst service by Amazon.",
+        "@AmazonHelp already mailed. you guys are offering me a refund so in a way my exchanged phone is gone and this phone too."
+      ]
+    },
+    {
+      "pair": [
+        "general_inquiry",
+        "subscription"
+      ],
+      "i_as_j": 2,
+      "j_as_i": 1,
+      "rate_i": 0.10526315789473684,
+      "rate_j": 0.06666666666666667,
+      "symmetric_rate": 0.08823529411764706,
+      "total_confused": 3,
+      "support_i": 19,
+      "support_j": 15,
+      "examples": [
+        "@user when is the release date #ArjunReddy on prime?",
+        "@AmazonHelp Ah ok, the distinction being purchased films are available that I download, but not prime movies that I download?",
+        "@user even with a prime membership \"free 2 day shipping\" still DOESN'T include Saturday ?..\ud83e\udd14\ud83d\ude44\ud83d\ude10 https://t.co/RALj35duGI"
+      ]
+    }
+  ],
+  "recommendations": "Consider merging pairs with high symmetric confusion. For highly asymmetric confusion, clarify descriptions or add distinct examples to resolve boundary overlap."
+}

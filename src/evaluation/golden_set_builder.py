@@ -13,6 +13,7 @@ from collections import Counter
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.config import *
+from src.pipeline import llm_cache
 
 from groq import Groq
 
@@ -66,8 +67,8 @@ Output ONLY valid JSON: {{"intent": "name", "escalation": true/false, "reasoning
 /no_think"""
 
     try:
-        response = client.chat.completions.create(
-            model=GROQ_MODEL_GENERATION,
+        response = llm_cache.cached_completion(
+            client, GROQ_MODEL_GENERATION,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=150,
             temperature=0.1,

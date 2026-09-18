@@ -8,6 +8,7 @@ from groq import Groq
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.config import *
+from src.pipeline import llm_cache
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -76,8 +77,8 @@ class LLMClassifier:
         user_message = f"User message: {text}"
         
         try:
-            response = self.client.chat.completions.create(
-                model=self.model,
+            response = llm_cache.cached_completion(
+                self.client, self.model,
                 messages=[
                     {"role": "system", "content": prompt},
                     {"role": "user", "content": user_message}
@@ -168,6 +169,104 @@ class KeywordClassifier:
             "confidence": 1.0,
             "method": "keyword"
         }
+
+
+class RAGClassifier:
+    """
+    Retrieves nearest neighbors from ChromaDB and passes them as few-shot
+    examples to the LLM for classification — instead of majority-voting labels.
+    """
+    def __init__(self):
+        import chromadb
+        from sentence_transformers import SentenceTransformer
+        self.embedding_model = SentenceTransformer(EMBEDDING_MODEL)
+        self.chroma_client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+        self.collection = self.chroma_client.get_or_create_collection(name='amazon_support')
+        self.llm_client = Groq(api_key=GROQ_API_KEY)
+        self.top_k = TOP_K_RETRIEVAL
+
+    def _retrieve_neighbors(self, text: str, top_k: int = None):
+        """Retrieve top-K similar conversations from ChromaDB."""
+        if top_k is None:
+            top_k = self.top_k
+        embedding = self.embedding_model.encode(
+            [f"Represent this sentence: {text}"]
+        )[0].tolist()
+        results = self.collection.query(
+            query_embeddings=[embedding],
+            n_results=top_k,
+        )
+        neighbors = []
+        if results and results['documents'] and len(results['documents'][0]) > 0:
+            for i in range(len(results['documents'][0])):
+                meta = results['metadatas'][0][i] if results['metadatas'] else {}
+                neighbors.append({
+                    'customer_text': meta.get('customer_text', results['documents'][0][i]),
+                    'brand_reply': meta.get('brand_reply', ''),
+                })
+        return neighbors
+
+    def classify(self, text: str):
+        """Classify by showing retrieved examples as few-shot demonstrations to LLM."""
+        neighbors = self._retrieve_neighbors(text)
+
+        # Build few-shot prompt with retrieved examples
+        intent_descriptions = []
+        for intent_name, data in INTENTS.items():
+            intent_descriptions.append(f"- {intent_name}: {data.get('description', '')}")
+        intent_list_str = "\n".join(intent_descriptions)
+
+        examples_str = ""
+        for i, n in enumerate(neighbors, 1):
+            examples_str += f"Example {i}:\n"
+            examples_str += f"  Customer: {n['customer_text'][:200]}\n"
+            examples_str += f"  Agent replied: {n['brand_reply'][:200]}\n\n"
+
+        prompt = (
+            "You are an intent classification system for Amazon customer support.\n"
+            "Classify the user's message into exactly one of these intents:\n"
+            f"{intent_list_str}\n\n"
+            "Here are similar real customer messages and how Amazon agents replied (use these for context):\n"
+            f"{examples_str}\n"
+            "Now classify this new message.\n"
+            "Output ONLY valid JSON: {\"intent\": \"name\", \"confidence\": 0.0-1.0, \"reasoning\": \"brief\"}"
+        )
+
+        user_message = f"Customer message: {text}"
+
+        try:
+            response = llm_cache.cached_completion(
+                self.llm_client, GROQ_MODEL_GENERATION,
+                messages=[
+                    {"role": "system", "content": prompt},
+                    {"role": "user", "content": user_message}
+                ],
+                max_tokens=200,
+                temperature=0.1,
+                response_format={"type": "json_object"}
+            )
+            content = response.choices[0].message.content
+            result = json.loads(content)
+            intent = result.get("intent", "general_inquiry")
+            if intent not in INTENT_NAMES:
+                intent = "general_inquiry"
+            confidence = float(result.get("confidence", 0.0))
+            return {
+                "intent": intent,
+                "confidence": confidence,
+                "method": "rag_fewshot",
+                "scores": result,
+                "num_neighbors": len(neighbors),
+            }
+        except Exception as e:
+            logger.error(f"RAG Classification failed: {e}")
+            return {
+                "intent": "general_inquiry",
+                "confidence": 0.0,
+                "method": "rag_fewshot_error",
+                "scores": {"error": str(e)},
+                "num_neighbors": len(neighbors),
+            }
 
 def main():
     print("Testing Keyword Classifier...")

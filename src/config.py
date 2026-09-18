@@ -34,9 +34,13 @@ GROQ_MODEL_JUDGE_2 = "qwen/qwen3.6-27b"            # Second judge for inter-rate
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"        # Local embedding model
 
 # ── Subsample ──────────────────────────────────────────────────────────
-MAX_CONVERSATIONS = 5000       # Number of conversations to process
+MAX_CONVERSATIONS = 0             # 0 = use all pairs (previously 5000)
 GOLDEN_SET_SIZE = 200          # Hand-labelled evaluation examples
 EXAMPLES_PER_INTENT = 25       # Stratified sampling target
+
+# ── Corpus Quality Filters ─────────────────────────────────────────────
+CORPUS_MIN_REPLY_CHARS = 40       # Drop replies shorter than this
+CORPUS_FILTER_CHANNEL_SHIFT = True  # Drop pure "please DM us" replies
 
 # ── Intent Taxonomy ────────────────────────────────────────────────────
 INTENTS = {

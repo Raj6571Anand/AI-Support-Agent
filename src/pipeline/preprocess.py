@@ -19,8 +19,8 @@ from tqdm import tqdm
 # Fix Windows encoding
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Add parent to path for config
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Add project root to path for config
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.config import *
 
 
@@ -236,8 +236,55 @@ def main():
     for pair in pairs:
         pair['escalation_signals'] = detect_escalation_signals(pair['brand_reply'])
 
-    # Subsample if needed
-    if len(pairs) > MAX_CONVERSATIONS:
+    # ── Quality Filters ────────────────────────────────────────────────
+    print(f"\n[5b/7] Applying corpus quality filters...")
+    total_before = len(pairs)
+
+    # Filter 1: Channel-shift replies ("please DM us" with no other info)
+    if CORPUS_FILTER_CHANNEL_SHIFT:
+        channel_shift_pattern = re.compile(
+            r'^@\S+\s*(please\s+)?(send\s+us\s+a\s+|reach\s+out\s+via\s+|'
+            r'contact\s+us\s+(via\s+|through\s+)?)?'
+            r'(dm|direct\s+message|private\s+message|send\s+us\s+a\s+message)',
+            re.IGNORECASE
+        )
+        # Only drop if the reply is PURELY channel-shift (no other substantial content)
+        def is_pure_channel_shift(reply):
+            reply_clean = re.sub(r'@\S+', '', reply).strip()
+            reply_clean = re.sub(r'\^[A-Z]{2}$', '', reply_clean).strip()  # Remove agent initials
+            # If after removing the DM suggestion there's < 20 chars of content, it's pure shift
+            without_dm = re.sub(
+                r'(please\s+)?(send\s+us\s+a\s+|reach\s+out\s+via\s+|contact\s+us\s+)?(dm|direct\s+message|private\s+message|message)',
+                '', reply_clean, flags=re.IGNORECASE
+            ).strip()
+            without_dm = re.sub(r'(so\s+we\s+can\s+)?(help|assist|look\s+into)\s*(you|this|it)?\.?', '', without_dm, flags=re.IGNORECASE).strip()
+            without_dm = re.sub(r'[^\w\s]', '', without_dm).strip()
+            return len(without_dm) < 25
+
+        before_cs = len(pairs)
+        pairs = [p for p in pairs if not is_pure_channel_shift(p['brand_reply'])]
+        after_cs = len(pairs)
+        print(f"  Channel-shift filter: {before_cs} → {after_cs} (dropped {before_cs - after_cs})")
+
+    # Filter 2: Short replies with no informational content
+    before_short = len(pairs)
+    def is_low_info_reply(reply):
+        reply_clean = re.sub(r'@\S+', '', reply).strip()
+        reply_clean = re.sub(r'\^[A-Z]{2}$', '', reply_clean).strip()
+        # Keep if it has a URL (informational)
+        if re.search(r'https?://', reply_clean):
+            return False
+        return len(reply_clean) < CORPUS_MIN_REPLY_CHARS
+
+    pairs = [p for p in pairs if not is_low_info_reply(p['brand_reply'])]
+    after_short = len(pairs)
+    print(f"  Short/low-info filter: {before_short} → {after_short} (dropped {before_short - after_short})")
+
+    total_after = len(pairs)
+    print(f"  Total: {total_before} → {total_after} ({total_before - total_after} dropped, {total_after/total_before*100:.1f}% retained)")
+
+    # Subsample if configured (0 = use all)
+    if MAX_CONVERSATIONS > 0 and len(pairs) > MAX_CONVERSATIONS:
         print(f"\n  Subsampling to {MAX_CONVERSATIONS} pairs...")
         rng = np.random.RandomState(42)
         indices = rng.choice(len(pairs), MAX_CONVERSATIONS, replace=False)

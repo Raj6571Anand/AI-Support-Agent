@@ -8,6 +8,7 @@ if sys.platform == 'win32':
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.config import *
+from src.pipeline import llm_cache
 
 from groq import Groq
 import chromadb
@@ -81,8 +82,8 @@ Reply directly as the Amazon support agent. Do not include any prefix like 'Amaz
             {"role": "user", "content": prompt + "\n/no_think"}
         ]
         
-        response = self.client.chat.completions.create(
-            model=GROQ_MODEL_GENERATION,
+        response = llm_cache.cached_completion(
+            self.client, GROQ_MODEL_GENERATION,
             messages=messages,
             max_tokens=MAX_TOKENS_REPLY,
             temperature=TEMPERATURE_REPLY
